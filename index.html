@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="SDO" />
+  <meta name="description" content="Polo, SDO">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Document title -->
+  <title>POLO | SDO</title>
+  <!-- Stylesheets & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css"
+    integrity="sha512-HamjnVxTT+zKHJE1w1T2EDHSVvUlFwKgj71I65H73uirwaaAc7gJqfh2jXvGdzTgXvggQzWx5rjRIX6Uf3YCBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Body Inner -->
+  <div class="body-inner">
+    <!-- Header -->
+    <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
+      <div class="header-inner">
+        <div class="container">
+          <!--Logo-->
+          <div id="logo">
+            <a href="index.html">
+              <span class="logo-default">POLO</span>
+              <span class="logo-dark">POLO</span>
+            </a>
+          </div>
+          <!--End: Logo-->
+          <!-- Search -->
+          <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i class="fa-solid fa-xmark"></i></a>
+            <form class="search-form" action="search-results-page.html" method="get">
+              <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+              <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+            </form>
+          </div>
+          <!-- end: search -->
+          <!--Header Extras-->
+          <div class="header-extras">
+            <ul>
+              <li>
+                <a id="btn-search" href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+              <li>
+                <div class="p-dropdown">
+                  <a href="#"><i class="fa-solid fa-globe"></i><span>EN</span></a>
+                  <ul class="p-dropdown-content">
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">Spanish</a></li>
+                    <li><a href="#">English</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--end: Header Extras-->
+          <!--Navigation Resposnive Trigger-->
+          <div id="mainMenu-trigger">
+            <a class="lines-button x"><span class="lines"></span></a>
+          </div>
+          <!--end: Navigation Resposnive Trigger-->
+          <!--Navigation-->
+          <div id="mainMenu">
+            <div class="container">
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown"><a href="#">Layout</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-submenu"><a href="#">Topbar</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Light</a></li>
+                          <li><a href="#">Dark</a></li>
+                          <li><a href="#">Transparent</a></li>
+                          <li><a href="#">Colored</a></li>
+                          <li><a href="#">Fullwidth</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Header</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Light</a></li>
+                          <li><a href="#">Dark</a></li>
+                          <li><a href="#">Transparent</a></li>
+                          <li><a href="#">Fullwidth</a></li>
+                          <li class="dropdown-submenu"><a href="#">Modern</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Light</a></li>
+                              <li><a href="">Dark</a></li>
+                              <li><a href="#">Transparent</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Mini</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Always Fixed</a></li>
+                          <li><a href="#">Disable Fixed</a></li>
+                          <li><a href="#">Responsive Fixed</a></li>
+                          <li class="dropdown-submenu"><a href="#">Logo</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Left</a></li>
+                              <li><a href="#">Right</a></li>
+                              <li><a href="#">Center</a></li>
+                              <li><a href="#">Header Fixed Logo</a></li>
+                              <li><a href="#">Header Responsive Logo</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu"><a href="#">Menu Positions</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Left</a></li>
+                              <li><a href="#">Right</a></li>
+                              <li><a href="#">Center</a></li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Main Menu<span class="badge badge-danger">NEW</span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Default</a></li>
+                          <li><a href="#">Lowercase</a></li>
+                          <li><a href="#">Split Menu</a></li>
+                          <li><a href="#">Sub Title Menu</a></li>
+                          <li><a href="#">Overlay Menu</a></li>
+                          <li><a href="#">Creative Menu</a></li>
+                          <li><a href="#">Lines Menu</a></li>
+                          <li class="dropdown-submenu"><a href="#">Outline</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Default</a></li>
+                              <li><a href="#">Dark</a></li>
+                              <li><a href="#">Light</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu"><a href="#">Rounded</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Default</a></li>
+                              <li><a href="#">Dark</a></li>
+                              <li><a href="#">Light</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu"><a href="#">Positions</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Left Aligned</a></li>
+                              <li><a href="#">Center Aligned</a></li>
+                              <li><a href="#">Right Aligned</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Dots Menu</a></li>
+                          <li><a href="#">One Page Menu</a></li>
+                          <li><a href="#">Hover Background</a></li>
+                          <li><a href="#">Button Version</a></li>
+                          <li><a href="#">Social Icons Version</a></li>
+                          <li><a href="#">OnClick Open</a></li>
+                          <li><a href="#">Rounded Dropdown</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Page Title</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Default</a></li>
+                          <li><a href="#">Image background</a></li>
+                          <li><a href="#">Video background</a></li>
+                          <li><a href="#">Pattern background</a></li>
+                          <li><a href="#">Colored background</a></li>
+                          <li><a href="#">Parallax</a></li>
+                          <li><a href="#">Animated</a></li>
+                          <li><a href="#">Right Aligned</a></li>
+                          <li><a href="#">Left Aligned</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Page Menu<span class="badge badge-danger">NEW</span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Default</a></li>
+                          <li><a href="#">Rounded</a></li>
+                          <li><a href="#">Outline</a></li>
+                          <li><a href="#">Lines</a></li>
+                          <li><a href="#">Solid</a></li>
+                          <li><a href="#">Light</a></li>
+                          <li><a href="#">Dark</a></li>
+                          <li><a href="#">Creative</a></li>
+                          <li><a href="#">Dropdown</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Sidebars</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Sticky version</a></li>
+                          <li><a href="#">Left aligned</a></li>
+                          <li><a href="#">Right aligned</a></li>
+                          <li><a href="#">Both Sidebars</a></li>
+                          <li><a href="#">Modern</a></li>
+                          <li><a href="#">Modern Right</a></li>
+                          <li><a href="#">Modern Both Sidebars</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Footers</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Default</a></li>
+                          <li><a href="#">Dark</a></li>
+                          <li><a href="#">Footer 1</a></li>
+                          <li><a href="#">Footer 2</a></li>
+                          <li><a href="#">Footer 3</a></li>
+                          <li><a href="#">Footer 4</a></li>
+                          <li><a href="#">Footer 5</a></li>
+                          <li><a href="#">Footer 6</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Options</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Boxed</a></li>
+                          <li><a href="#">Modern</a></li>
+                          <li><a href="#">Frame</a></li>
+                          <li><a href="#">Wide (default)</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#">Layout Demos<span class="badge badge-primary">220+</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#">Features</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-submenu"><a href="#">Sliders</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Revolution Slider</a></li>
+                          <li><a href="#">Inspiro Slider</a></li>
+                          <li><a href="#">Fullscreen Image</a></li>
+                          <li><a href="#">Fullscreen Parallax</a></li>
+                          <li><a href="#">Fullscreen Text Rotator</a></li>
+                          <li><a href="#">Fullscreen HTML5 Video</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Widgets</a></li>
+                      <li><a href="#">Page Loaders<span class="badge badge-danger">NEW</span></a></li>
+                      <li class="dropdown-submenu"><a href="#">Modal Auto Open<span
+                            class="badge badge-danger">NEW</span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Subscription</a></li>
+                          <li><a href="#">Shop Promotion</a></li>
+                          <li><a href="#">Login Form</a></li>
+                          <li><a href="#">Audio Player</a></li>
+                          <li><a href="#">HTML5 Video</a></li>
+                          <li><a href="#">YouTube Video</a></li>
+                          <li><a href="#">Vimeo Video</a></li>
+                          <li><a href="#">Iframe</a></li>
+                          <li><a href="#">Sample Text</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Cookie Notify<span
+                            class="badge badge-danger">NEW</span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Top position</a></li>
+                          <li><a href="#">Bottom position</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Shape Dividers<span class="badge badge-danger">NEW</span></a></li>
+                      <li class="dropdown-submenu"><a href="#">Menu Labels</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Label (new)<span class="badge badge-danger">NEW</span></a></li>
+                          <li><a href="#">Label (hot)<span class="badge badge-danger">HOT</span></a></li>
+                          <li><a href="#">Label (popular)<span class="badge badge-success">POPULAR</span></a></li>
+                          <li><a href="#">Label (sale)<span class="badge badge-warning">SALE</span></a></li>
+                          <li><a href="#">Label (info)<span class="badge badge-info">INFO</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown mega-menu-item"><a href="#">Elements</a>
+                    <ul class="dropdown-menu">
+                      <li class="mega-menu-content">
+                        <div class="row">
+                          <div class="col-lg-2">
+                            <ul>
+                              <li><a href="#">Accordions</a></li>
+                              <li><a href="#">Alerts</a></li>
+                              <li><a href="#">Animations</a></li>
+                              <li><a href="#">Avatar</a></li>
+                              <li><a href="#">Audio & Video</a></li>
+                              <li><a href="#">Blockquotes</a></li>
+                              <li><a href="#">BS Switch<span class="badge badge-danger">NEW</span></a></li>
+                              <li><a href="#">BS Notify<span class="badge badge-danger">NEW</span></a></li>
+                              <li><a href="#">Breadcrumbs</a></li>
+                              <li><a href="#">Buttons</a></li>
+                              <li><a href="#">Background Image</a></li>
+                              <li><a href="#">Background Overlays</a></li>
+                            </ul>
+                          </div>
+                          <!-- ... (similar modifications for other columns) ... -->
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#">Pages</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-submenu"><span class="dropdown-menu-title-only">About us</span>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Basic</a></li>
+                          <li><a href="#">Extended</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><span class="dropdown-menu-title-only">About me</span>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Creative<span class="badge badge-danger">NEW</span></a></li>
+                          <li><a href="#">Basic</a></li>
+                          <li><a href="#">Extended</a></li>
+                        </ul>
+                      </li>
+                      <!-- ... (similar modifications for other submenu items) ... -->
+                    </ul>
+                  </li>
+
+                  <li class="dropdown mega-menu-item"><a href="#">Portfolio</a>
+                    <ul class="dropdown-menu">
+                      <li class="mega-menu-content">
+                        <div class="row">
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Grids</li>
+                              <li><a href="#">Two Columns</a></li>
+                              <li><a href="#">Three Columns</a></li>
+                              <li><a href="#">Four Columns</a></li>
+                              <li><a href="#">Five Columns</a></li>
+                              <li><a href="#">Six Columns</a></li>
+                              <li><a href="#">Sidebar version</a></li>
+                              <li><a href="#">Wide version</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Masonry</li>
+                              <li><a href="#">Two Columns</a></li>
+                              <li><a href="#">Three Columns<span class="badge badge-danger">HOT</span></a></li>
+                              <li><a href="#">Four Columns</a></li>
+                              <li><a href="#">Five Columns</a></li>
+                              <li><a href="#">Six Columns</a></li>
+                              <li><a href="#">Sidebar version</a></li>
+                              <li><a href="#">Wide version</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Styles</li>
+                              <li><a href="#">Filter Styles</a></li>
+                              <li><a href="#">Load more</a></li>
+                              <li><a href="#">Load more - Sidebar</a></li>
+                              <li><a href="#">Infinity Scroll</a></li>
+                              <li><a href="#">Portfolio Ajax</a></li>
+                              <li><a href="#">Gallery Modal</a></li>
+                              <li><a href="#">Video Modal</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Layouts</li>
+                              <li><a href="#">Left Sidebar</a></li>
+                              <li><a href="#">Right Sidebar</a></li>
+                              <li><a href="#">Both Sidebars</a></li>
+                              <li><a href="#">Slider Default</a></li>
+                              <li><a href="#">No Page Title</a></li>
+                              <li><a href="#">No Page Title - Sidebar</a></li>
+                              <li><a href="#">Hover Styles</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Single Project</li>
+                              <li><a href="#">Grid Gallery</a></li>
+                              <li><a href="#">Particles Wide Project</a></li>
+                              <li><a href="#">Floating Sidebar</a></li>
+                              <li><a href="#">Slider version</a></li>
+                              <li><a href="#">Fullscreen image</a></li>
+                              <li><a href="#">Fullscreen Video</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-12 no-padding">
+                            <div class="d-none d-lg-block m-t-40 m-b-10">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-lg-9 m-t-10">
+                                    <div class="text-center center">
+                                      <div class="heading-creative"><strong>20+</strong> Amazing Hover Styles</div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3"><a href="#"
+                                      class="btn m-l-20 btn-light btn-shadow btn-light-hover btn-light-hover">View All
+                                      Hover Styles</a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="d-block d-lg-none">
+                              <li><a class="mega-menu-title" href="#">20+ Amazing Hover Styles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown mega-menu-item"><a href="#">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li class="mega-menu-content">
+                        <div class="row">
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Masonry</li>
+                              <li><a href="#">Two Columns</a></li>
+                              <li><a href="#">Three Columns<span class="badge badge-danger">HOT</span></a></li>
+                              <li><a href="#">Four Columns</a></li>
+                              <li><a href="#">Sidebar version</a></li>
+                              <li><a href="#">No page title</a></li>
+                              <li><a href="#">Wide version</a></li>
+                              <li><a href="#">Load More</a></li>
+                              <li><a href="#">Infinite Scroll</a></li>
+                              <li><a href="#">Filter Categories</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Grids Layout</li>
+                              <li><a href="#">One Column</a></li>
+                              <li><a href="#">Two Columns</a></li>
+                              <li><a href="#">Three Columns</a></li>
+                              <li><a href="#">Four Columns</a></li>
+                              <li><a href="#">No page title</a></li>
+                              <li><a href="#">Wide version</a></li>
+                              <li><a href="#">Load More</a></li>
+                              <li><a href="#">Infinite Scroll</a></li>
+                              <li><a href="#">Filter Categories</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Left Image</li>
+                              <li><a href="#">Right Sidebar</a></li>
+                              <li><a href="#">Left Sidebar</a></li>
+                              <li><a href="#">Both Sidebars</a></li>
+                              <li><a href="#">No Sidebar</a></li>
+                              <li><a href="#">No page title</a></li>
+                              <li><a href="#">Load More</a></li>
+                              <li><a href="#">Infinite Scroll</a></li>
+                              <li><a href="#">Author Info</a></li>
+                              <li><a href="#">Filter Categories</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Layouts</li>
+                              <li><a href="#">Left Sidebar</a></li>
+                              <li><a href="#">Right Sidebar</a></li>
+                              <li><a href="#">Both Sidebars</a></li>
+                              <li><a href="#">Fullwidth</a></li>
+                              <li class="mega-menu-title">Post Item Styles</li>
+                              <li><a href="#">Shadow</a></li>
+                              <li><a href="#">Textual</a></li>
+                              <li><a href="#">Grey Background</a></li>
+                              <li><a href="#">Author Info</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Single Post</li>
+                              <li><a href="#">Default</a></li>
+                              <li><a href="#">Slider</a></li>
+                              <li><a href="#">Video</a></li>
+                              <li><a href="#">Audio</a></li>
+                              <li><a href="#">Creative</a></li>
+                              <li class="mega-menu-title">Comments<span class="badge badge-danger">NEW</span></li>
+                              <li><a href="#">Default Comments</a></li>
+                              <li><a href="#">Disqus Comments</a></li>
+                              <li><a href="#">Facebook Comments</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown mega-menu-item"><a href="#">Shop</a>
+                    <ul class="dropdown-menu">
+                      <li class="mega-menu-content">
+                        <div class="row">
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Columns</li>
+                              <li><a href="#">Two Columns</a></li>
+                              <li><a href="#">Three Columns</a></li>
+                              <li><a href="#">Four Columns</a></li>
+                              <li><a href="#">Five Columns</a></li>
+                              <li><a href="#">Six Columns</a></li>
+                              <li><a href="#">Sidebar Sticky</a></li>
+                              <li><a href="#">Wide version</a></li>
+                              <li><a href="#">No page title</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Layouts</li>
+                              <li><a href="#">Left Sidebar</a></li>
+                              <li><a href="#">Right Sidebar</a></li>
+                              <li><a href="#">Both Sidebars</a></li>
+                              <li><a href="#">Fullwidth (Wide)</a></li>
+                              <li class="mega-menu-title">Loading Styles</li>
+                              <li><a href="#">Load more</a><a href="#">Load Sidebar</a></li>
+                              <li><a href="#">Infinity Scroll</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Order process</li>
+                              <li><a class="animsition-link" href="#">Shopping Cart</a></li>
+                              <li><a class="animsition-link" href="#">Shopping Cart - Empty</a></li>
+                              <li><a class="animsition-link" href="#">Checkout</a></li>
+                              <li><a class="animsition-link" href="#">Checkout Completed</a></li>
+                              <li><a href="#">Wishlist</a></li>
+                              <li><a href="#">Wishlist Empty</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5">
+                            <ul>
+                              <li class="mega-menu-title">Single Product</li>
+                              <li><a href="#">Fullwidth</a></li>
+                              <li><a href="#">Left Sidebar</a></li>
+                              <li><a href="#">Right Sidebar</a></li>
+                              <li><a href="#">Both Sidebars</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-2-5 p-l-0">
+                            <h4 class="text-theme">BIG SALE<small>Up to</small></h4>
+                            <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                            <p class="m-b-0">The most happiest time of the day!. Morbi sagittis, sem quis ipsum dolor
+                              sit amet lacinia faucibus.</p><a class="btn btn-shadow btn-rounded btn-block m-t-10">SHOP
+                              NOW!</a><small class="t300">
+                              <p class="text-center m-0"><em>* Limited time Offer</em></p>
+                            </small>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--end: Navigation-->
+        </div>
+      </div>
+    </header>
+    <!-- end: Header -->
+    <!-- Inspiro Slider -->
+    <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-fade="true">
+      <!-- Slide 1 -->
+      <div class="slide kenburns" data-bg-image="images/slider/notgeneric_bg3.jpg">
+        <div class="bg-overlay"></div>
+        <div class="container">
+          <div class="slide-captions text-center text-light">
+            <!-- Captions -->
+            <h1>WELCOME TO THE WORLD OF POLO</h1>
+            <p>Say hello to the smartest and most flexible bootstrap template. Polo is an powerful template that can
+              build any type of websites, and quite possibly the only one you will ever need.</p>
+            <div><a href="#welcome" class="btn scroll-to">Explore more</a></div>
+            </span>
+            <!-- end: Captions -->
+          </div>
+        </div>
+      </div>
+      <!-- end: Slide 1 -->
+      <!-- Slide 2 -->
+      <div class="slide" data-bg-video="video/pexels-waves.mp4">
+        <div class="bg-overlay"></div>
+        <div class="container">
+          <div class="slide-captions text-left text-light">
+            <!-- Captions -->
+            <h1>220+ Laytout Demos</h1>
+            <p class="text-small">POLO is packed with 220+ pre-made layouts that allow you to quickly jumpstart your
+              project. Completely customizable for creating your own designs.</p>
+            <div><a href="#welcome" class="btn scroll-to">Explore more</a></div>
+            <!-- end: Captions -->
+          </div>
+        </div>
+      </div>
+      <!-- end: Slide 2 -->
+    </div>
+    <!--end: Inspiro Slider -->
+    <!-- WELCOME -->
+    <section id="welcome" class="p-b-0">
+      <div class="container">
+        <div class="heading-text heading-section text-center m-b-40" data-animate="fadeInUp">
+          <h2>WELCOME TO THE WORLD OF POLO</h2>
+          <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span>
+        </div>
+        <div class="row" data-animate="fadeInUp">
+          <div class="col-lg-12">
+            <img class="img-fluid" src="images/other/responsive-1.jpg" alt="Welcome to POLO">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: WELCOME -->
+    <!-- WHAT WE DO -->
+    <section class="background-grey">
+      <div class="container">
+        <div class="heading-text heading-section">
+          <h2>WHAT WE DO</h2>
+          <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div data-animate="fadeInUp" data-animate-delay="0">
+              <h4>Modern Design</h4>
+              <p>Lorem ipsum dolor sit amet, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                orci ut et lobortis aliquam.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div data-animate="fadeInUp" data-animate-delay="200">
+              <h4>Loaded with Features</h4>
+              <p>Lorem ipsum dolor sit amet, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                orci ut et lobortis aliquam.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div data-animate="fadeInUp" data-animate-delay="400">
+              <h4>Completely Customizable</h4>
+              <p>Lorem ipsum dolor sit amet, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                orci ut et lobortis aliquam.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div data-animate="fadeInUp" data-animate-delay="600">
+              <h4>100% Responsive Layout</h4>
+              <p>Lorem ipsum dolor sit amet, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                orci ut et lobortis aliquam.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div data-animate="fadeInUp" data-animate-delay="800">
+              <h4>Clean Modern Code</h4>
+              <p>Lorem ipsum dolor sit amet, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                orci ut et lobortis aliquam.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div data-animate="fadeInUp" data-animate-delay="1000">
+              <h4>Free Updates & Support</h4>
+              <p>Lorem ipsum dolor sit amet, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                orci ut et lobortis aliquam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END WHAT WE DO -->
+    <!-- PORTFOLIO -->
+    <section class="p-b-0">
+      <div class="container">
+        <div class="heading-text heading-section">
+          <h2>Recent Work</h2>
+          <span class="lead">Lorem ipsum dolor sit amet, coper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+            consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.</span>
+        </div>
+      </div>
+      <div class="portfolio">
+        <!-- Portfolio Items -->
+        <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="0">
+          <!-- portfolio item -->
+          <div class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-webdesign">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-slider">
+                <div class="carousel dots-inside dots-dark arrows-dark" data-items="1" data-loop="true"
+                  data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="1500">
+                  <a href="#"><img src="images/portfolio/64.jpg" alt=""></a>
+                  <a href="#"><img src="images/portfolio/70.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+          <!-- portfolio item -->
+          <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-image">
+                <a href="#"><img src="images/portfolio/60.jpg" alt=""></a>
+              </div>
+              <div class="portfolio-description">
+                <a title="Paper Pouch!" data-lightbox="image" href="images/portfolio/83l.jpg"><i
+                    class="fa-solid fa-maximize"></i></a>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+          <!-- portfolio item -->
+          <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-image">
+                <a href="#"><img src="images/portfolio/61.jpg" alt=""></a>
+              </div>
+              <div class="portfolio-description">
+                <a href="#">
+                  <h3>Let's Go Outside</h3>
+                  <span>Illustrations / Graphics</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+          <!-- portfolio item -->
+          <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-image">
+                <a href="#"><img src="images/portfolio/65.jpg" alt=""></a>
+              </div>
+              <div class="portfolio-description" data-lightbox="gallery">
+                <a title="Photoshop Mock-up!" data-lightbox="gallery-image" href="images/portfolio/80l.jpg"><i
+                    class="fa-solid fa-copy"></i></a>
+                <a title="Paper Pouch!" data-lightbox="gallery-image" href="images/portfolio/81l.jpg"
+                  class="hidden"></a>
+                <a title="Mock-up" data-lightbox="gallery-image" href="images/portfolio/82l.jpg" class="hidden"></a>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+          <!-- portfolio item -->
+          <div class="portfolio-item img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-image">
+                <a href="#"><img src="images/portfolio/66.jpg" alt=""></a>
+              </div>
+              <div class="portfolio-description">
+                <a href="#">
+                  <h3>Last Iceland Sunshine</h3>
+                  <span>Graphics</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+          <!-- portfolio item -->
+          <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-image">
+                <a href="#"><img src="images/portfolio/67.jpg" alt=""></a>
+              </div>
+              <div class="portfolio-description">
+                <a title="Paper Pouch!" data-lightbox="iframe" href="https://www.youtube.com/watch?v=k6Kly58LYzY"><i
+                    class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+          <!-- portfolio item -->
+          <div class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-marketing ct-webdesign">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-slider">
+                <div class="carousel dots-inside dots-dark arrows-dark" data-items="1" data-loop="true"
+                  data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="1500">
+                  <a href="#"><img src="images/portfolio/68.jpg" alt=""></a>
+                  <a href="#"><img src="images/portfolio/71.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+          <!-- portfolio item -->
+          <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
+            <div class="portfolio-item-wrap">
+              <div class="portfolio-image">
+                <a href="#"><img src="images/portfolio/69.jpg" alt=""></a>
+              </div>
+              <div class="portfolio-description">
+                <a href="#">
+                  <h3>Luxury Wine</h3>
+                  <span>Graphics / Branding</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end: portfolio item -->
+        </div>
+        <!-- end: Portfolio Items -->
+      </div>
+    </section>
+    <!-- end: PORTFOLIO -->
+    <!-- SERVICES -->
+    <section>
+      <div class="container">
+        <div class="heading-text heading-section text-center">
+          <h2>SERVICES</h2>
+          <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="0">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-plug"></i></a>
+              </div>
+              <h3>Powerful template</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="200">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-desktop"></i></a>
+              </div>
+              <h3>Flexible Layouts</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="400">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-cloud"></i></a>
+              </div>
+              <h3>Retina Ready</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="600">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="far fa-lightbulb"></i></a>
+              </div>
+              <h3>Fast processing</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="800">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-trophy"></i></a>
+              </div>
+              <h3>Unlimited Colors</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1000">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-thumbs-up"></i></a>
+              </div>
+              <h3>Premium Sliders</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1200">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-rocket"></i></a>
+              </div>
+              <h3>Modern Design</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1400">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-flask"></i></a>
+              </div>
+              <h3>Clean Modern Code</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1600">
+            <div class="icon-box effect medium border small">
+              <div class="icon">
+                <a href="#"><i class="fa fa-umbrella"></i></a>
+              </div>
+              <h3>Free Updates & Support</h3>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: SERVICES -->
+    <!-- COUNTERS -->
+    <section class="text-light p-t-150 p-b-150 " data-bg-parallax="images/parallax/12.jpg">
+      <div class="bg-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="text-center">
+              <div class="icon"><i class="fa fa-3x fa-code"></i></div>
+              <div class="counter"> <span data-speed="3000" data-refresh-interval="50" data-to="12416" data-from="12416"
+                  data-seperator="true"></span> </div>
+              <div class="seperator seperator-small"></div>
+              <p>LINES OF CODE</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="text-center">
+              <div class="icon"><i class="fa fa-3x fa-coffee"></i></div>
+              <div class="counter"> <span data-speed="4500" data-refresh-interval="23" data-to="365" data-from="365"
+                  data-seperator="true"></span> </div>
+              <div class="seperator seperator-small"></div>
+              <p>CUPS OF COFFEE</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="text-center">
+              <div class="icon"><i class="fa fa-3x fa-rocket"></i></div>
+              <div class="counter"> <span data-speed="3000" data-refresh-interval="12" data-to="114" data-from="114"
+                  data-seperator="true"></span> </div>
+              <div class="seperator seperator-small"></div>
+              <p>FINISHED PROJECTS</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="text-center">
+              <div class="icon"><i class="fa fa-3x fa-smile-o"></i></div>
+              <div class="counter"> <span data-speed="4550" data-refresh-interval="50" data-to="14825" data-from="14825"
+                  data-seperator="true"></span> </div>
+              <div class="seperator seperator-small"></div>
+              <p>SATISFIED CLIENTS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: COUNTERS -->
+    <!-- BLOG -->
+    <section class="content background-grey">
+      <div class="container">
+        <div class="heading-text heading-section">
+          <h2>OUR BLOG</h2>
+          <span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus,
+            orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id
+            molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare
+            orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </span>
+        </div>
+        <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
+          <!-- Post item-->
+          <div class="post-item border">
+            <div class="post-item-wrap">
+              <div class="post-image">
+                <a href="#">
+                  <img alt="" src="images/blog/12.jpg">
+                </a>
+                <span class="post-meta-category"><a href="">Lifestyle</a></span>
+              </div>
+              <div class="post-item-description">
+                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33
+                    Comments</a></span>
+                <h2><a href="#">Standard post with a single image
+                  </a></h2>
+                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta
+                  feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end: Post item-->
+          <!-- Post item-->
+          <div class="post-item border">
+            <div class="post-item-wrap">
+              <div class="post-image">
+                <a href="#">
+                  <img alt="" src="images/blog/17.jpg">
+                </a>
+                <span class="post-meta-category"><a href="">Science</a></span>
+              </div>
+              <div class="post-item-description">
+                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33
+                    Comments</a></span>
+                <h2><a href="#">Standard post with a single image
+                  </a></h2>
+                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta
+                  feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end: Post item-->
+          <!-- Post item-->
+          <div class="post-item border">
+            <div class="post-item-wrap">
+              <div class="post-image">
+                <a href="#">
+                  <img alt="" src="images/blog/18.jpg">
+                </a>
+                <span class="post-meta-category"><a href="">Science</a></span>
+              </div>
+              <div class="post-item-description">
+                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33
+                    Comments</a></span>
+                <h2><a href="#">Standard post with a single image
+                  </a></h2>
+                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta
+                  feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end: Post item-->
+        </div>
+      </div>
+    </section>
+    <!-- end: BLOG -->
+    <!-- CLIENTS -->
+    <section class="p-t-60">
+      <div class="container">
+        <div class="heading-text heading-section text-center">
+          <h2>CLIENTS</h2>
+          <span class="lead">Our awesome clients we've had the pleasure to work with! </span>
+        </div>
+        <div class="carousel client-logos" data-items="6" data-items-sm="4" data-items-xs="3" data-items-xxs="2"
+          data-margin="20" data-arrows="false" data-autoplay="true" data-autoplay="3000" data-loop="true">
+          <div>
+            <a href="#"><img alt="" src="images/clients/1.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/2.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/3.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/4.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/5.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/6.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/7.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/8.png"> </a>
+          </div>
+          <div>
+            <a href="#"><img alt="" src="images/clients/9.png"> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: CLIENTS -->
+    <!-- TEAM -->
+    <section class="background-grey">
+      <div class="container">
+        <div class="heading-text heading-section text-center">
+          <h2>MEET OUR TEAM</h2>
+          <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.
+          </p>
+        </div>
+        <div class="row team-members">
+          <div class="col-lg-3">
+            <div class="team-member">
+              <div class="team-image">
+                <img src="images/team/6.jpg">
+              </div>
+              <div class="team-desc">
+                <h3>Alea Smith</h3>
+                <span>Software Developer</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing tristique hendrerit laoreet. </p>
+                <div class="align-center">
+                  <a class="btn btn-xs btn-slide btn-light" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Mail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <div class="team-image">
+                <img src="images/team/7.jpg">
+              </div>
+              <div class="team-desc">
+                <h3>Ariol Doe</h3>
+                <span>Software Developer</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing tristique hendrerit laoreet. </p>
+                <div class="align-center">
+                  <a class="btn btn-xs btn-slide btn-light" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Mail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <div class="team-image">
+                <img src="images/team/8.jpg">
+              </div>
+              <div class="team-desc">
+                <h3>Emma Ross</h3>
+                <span>Software Developer</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing tristique hendrerit laoreet. </p>
+                <div class="align-center">
+                  <a class="btn btn-xs btn-slide btn-light" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Mail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="team-member">
+              <div class="team-image">
+                <img src="images/team/9.jpg">
+              </div>
+              <div class="team-desc">
+                <h3>Victor Loda</h3>
+                <span>Software Developer</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing tristique hendrerit laoreet. </p>
+                <div class="align-center">
+                  <a class="btn btn-xs btn-slide btn-light" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Mail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: TEAM -->
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="widget">
+                <div class="widget-title">Polo HTML5 Template</div>
+                <p class="mb-5">Built with love in Fort Worth, Sharjah, UAE<br> All rights reserved. Copyright © 2023.
+                  SDO.</p>
+                <a href="#"
+                  class="btn btn-inverted" target="_blank">Purchase Now</a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Discover</div>
+                    <ul class="list">
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Layouts</a></li>
+                      <li><a href="#">Corporate</a></li>
+                      <li><a href="#">Updates</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Customers</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Features</div>
+                    <ul class="list">
+                      <li><a href="#">Layouts</a></li>
+                      <li><a href="#">Headers</a></li>
+                      <li><a href="#">Widgets</a></li>
+                      <li><a href="#">Footers</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Pages</div>
+                    <ul class="list">
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Shop</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="widget">
+                    <div class="widget-title">Support</div>
+                    <ul class="list">
+                      <li><a href="#">Help Desk</a></li>
+                      <li><a href="#">Documentation</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-content">
+        <div class="container">
+          <div class="copyright-text text-center">&copy; 2023 POLO - SDO Template. All Rights
+            Reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <!-- end: Footer -->
+  </div>
+  <!-- end: Body Inner -->
+  <!-- Scroll top -->
+  <a id="scrollTop"><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i></a>
+  <!--Plugins-->
+  <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/66cc8f7fef.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/breakpoints-js@1.0.6/dist/breakpoints.min.js"></script>
+  <script src="js/breakpoints.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/functions.js"></script>
+</body>
+
+</html>
