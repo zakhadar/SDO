@@ -1,0 +1,268 @@
+.inspiro-slider {
+  width: 100%;
+  height: 72vh;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+  min-height: 100%;
+  width: 100%;
+
+  .slide {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    z-index: 1;
+    width: 100%;
+    display: flex !important;
+
+    .container {
+      padding-top: 120px;
+      padding-bottom: 100px;
+      align-self: center !important;
+    }
+
+    .container-wide {
+      padding-top: 120px;
+      padding-bottom: 100px;
+      align-self: center !important;
+    }
+
+    .slide-captions {
+      position: relative;
+      text-align: left;
+
+      h1 {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 80px;
+        margin-bottom: 30px;
+        color: $color_white;
+      }
+
+      h2 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 68px;
+        margin-bottom: 30px;
+        color: $color_white;
+      }
+
+      h3 {
+        color: $color_white;
+      }
+
+      h4 {
+        color: $color_white;
+      }
+
+      h5 {
+        color: $color_white;
+      }
+
+      h6 {
+        color: $color_white;
+      }
+
+      .strong {
+        color: $color_white;
+        display: block;
+        font-size: 12px !important;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        position: relative;
+        text-transform: uppercase;
+
+        &::after {
+          border-top: 3px solid #fff;
+          content: "";
+          display: block;
+          margin-bottom: 0;
+          margin-top: 8px;
+          width: 26px;
+        }
+      }
+
+      >p {
+        color: $color_white;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 40px;
+      }
+
+      .text-dark.strong {
+        &::after {
+          border-top-color: $border-top-color-primary;
+        }
+      }
+
+      .slide-caption-hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      img {
+        width: inherit !important;
+      }
+    }
+
+    .slide-captions.text-dark {
+      .strong {
+        &::after {
+          border-top-color: $border-top-color-primary;
+        }
+      }
+    }
+
+    .slide-captions.text-left {
+      .strong {
+        &::after {
+          margin-left: 0;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .slide-captions.text-center {
+      .strong {
+        &::after {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .slide-captions.text-right {
+      .strong {
+        &::after {
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .slide.is-selected {
+    z-index: 2;
+  }
+
+  .slide-link {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .flickity-button {
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    background: transparent;
+    color: $color_white;
+    box-shadow: none;
+    padding: 0;
+
+    &::before {
+      line-height: 78px;
+      font-size: 28px;
+      color: $color_white;
+    }
+  }
+
+  .flickity-page-dots {
+    bottom: 30px;
+
+    .dot {
+      box-shadow: inset 0 0 0 2px #fff;
+
+      &:after {
+        background-color: $background-color_white;
+        box-shadow: 0 0 1px #fff;
+      }
+    }
+  }
+
+  .slide-captions {
+    >* {
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    .flickity-button.next {
+      left: auto;
+      right: 10px;
+      opacity: 1;
+    }
+
+    .flickity-button.next.disabled {
+      opacity: 0;
+    }
+
+    .flickity-button.previous {
+      right: auto;
+      left: 10px;
+      opacity: 1;
+    }
+
+    .flickity-button.previous.disabled {
+      opacity: 0;
+    }
+  }
+
+  .portfolio-item {
+    padding-bottom: 0;
+  }
+}
+
+.inspiro-slider.slider-fullscreen {
+  height: 100vh;
+}
+
+.inspiro-slider.is-fade {
+  .slide {
+    opacity: 0 !important;
+    transition: opacity 0.5s ease !important;
+  }
+
+  .slide.is-selected {
+    opacity: 1 !important;
+  }
+}
+
+.inspiro-slider.slider-loaded {
+  opacity: 1;
+}
+
+.inspiro-slider.flickity-enabled {
+  opacity: 1;
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px;
+  background-color: $background-color_white;
+  z-index: 1;
+}
+
+.boxed-slider {
+  height: 600px;
+  width: 100%;
+
+  .polo-carousel-item {
+    height: 600px;
+  }
+
+  .owl-bg-img {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,367 @@
+.post-item {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 0 0 20px 0;
+
+  .post-item-wrap {
+    background-color: $background-color_white;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-image {
+    margin: 0;
+    position: relative;
+    padding: 0;
+
+    .post-meta-category {
+      background-color: $background-color_blue;
+      color: $color_white;
+      font-size: 13px;
+      padding: 2px 16px;
+      border-radius: 50px;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      z-index: 3;
+      margin-right: 0;
+
+      i {
+        margin-right: 4px;
+      }
+
+      a {
+        color: $color_white;
+      }
+    }
+  }
+
+  .post-slider {
+    margin: 0;
+    position: relative;
+    padding: 0;
+
+    .post-meta-category {
+      background-color: $background-color_blue;
+      color: $color_white;
+      font-size: 13px;
+      padding: 2px 16px;
+      border-radius: 50px;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      z-index: 3;
+      margin-right: 0;
+
+      i {
+        margin-right: 4px;
+      }
+
+      a {
+        color: $color_white;
+      }
+    }
+  }
+
+  .post-video {
+    margin: 0;
+    position: relative;
+    padding: 0;
+
+    .post-meta-category {
+      background-color: $background-color_blue;
+      color: $color_white;
+      font-size: 13px;
+      padding: 2px 16px;
+      border-radius: 50px;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      z-index: 3;
+      margin-right: 0;
+
+      i {
+        margin-right: 4px;
+      }
+
+      a {
+        color: $color_white;
+      }
+    }
+
+    video {
+      width: 100%;
+      background-color: $background-color_black;
+    }
+
+    iframe {
+      width: 100%;
+      background-color: $background-color_black;
+    }
+  }
+
+  .post-audio {
+    margin: 0;
+    position: relative;
+    padding: 0;
+
+    .post-meta-category {
+      background-color: $background-color_blue;
+      color: $color_white;
+      font-size: 13px;
+      padding: 2px 16px;
+      border-radius: 50px;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      z-index: 3;
+      margin-right: 0;
+
+      i {
+        margin-right: 4px;
+      }
+
+      a {
+        color: $color_white;
+      }
+    }
+
+    >a {
+      >img {
+        margin-bottom: -28px;
+      }
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: -6px;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .post-quote-img {
+    margin: 0;
+    position: relative;
+    padding: 0;
+
+    .post-meta-category {
+      background-color: $background-color_blue;
+      color: $color_white;
+      font-size: 13px;
+      padding: 2px 16px;
+      border-radius: 50px;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      z-index: 3;
+      margin-right: 0;
+      background-color: $background-color_white;
+      color: $color_blue;
+
+      i {
+        margin-right: 4px;
+      }
+
+      a {
+        color: $color_white;
+        color: $color_blue;
+      }
+    }
+  }
+
+  .post-item-description {
+    padding: 24px;
+    line-height: 28px;
+    color: $color_medium_dark;
+
+    >h2 {
+      font-size: 18px;
+      letter-spacing: -0.1px;
+      line-height: 23px;
+      margin-bottom: 16px;
+      color: $color_darker_gray;
+      font-weight: 600;
+
+      >a {
+        font-size: 18px;
+        letter-spacing: -0.1px;
+        line-height: 23px;
+        margin-bottom: 16px;
+        color: $color_darker_gray;
+        font-weight: 600;
+      }
+    }
+
+    .post-meta-date {
+      color: $color_light_grayish;
+      position: relative;
+      top: -4px;
+      font-size: 12px;
+      margin-right: 8px;
+
+      i {
+        margin-right: 4px !important;
+      }
+
+      a {
+        color: $color_light_grayish;
+      }
+    }
+
+    .post-meta-comments {
+      color: $color_light_grayish;
+      position: relative;
+      top: -4px;
+      font-size: 12px;
+      margin-right: 8px;
+
+      i {
+        margin-right: 4px !important;
+      }
+
+      a {
+        color: $color_light_grayish;
+      }
+    }
+
+    .post-meta-category {
+      color: $color_light_grayish;
+      position: relative;
+      top: -4px;
+      font-size: 12px;
+      margin-right: 8px;
+
+      i {
+        margin-right: 4px !important;
+      }
+
+      a {
+        color: $color_light_grayish;
+      }
+    }
+
+    .post-post-likes {
+      float: right;
+      font-size: 14px;
+      color: $color_grayish;
+
+      i {
+        margin-right: 8px;
+        color: $color_grayish;
+      }
+    }
+  }
+
+  .comments {
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+  }
+}
+
+.post-item.border {
+  border: none !important;
+
+  .post-item-wrap {
+    border: 1px solid #f2f2f2;
+  }
+
+  >.post-item-wrap {
+    >.post-item-description {
+      padding: 24px !important;
+      width: 100% !important;
+    }
+  }
+}
+
+#blog {
+  .blog {
+    .post-item {
+      width: 25%;
+      padding: 0 20px 20px 0;
+    }
+  }
+}
+
+.post-image {
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.comments {
+  margin: 0;
+
+  .comment_number {
+    font-size: 18px;
+    margin: 0 0 30px;
+
+    span {
+      color: $color_blue;
+    }
+  }
+
+  .comment {
+    padding: 10px 0;
+    background-color: $background-color_white;
+
+    .image {
+      border-radius: 65px;
+      display: block;
+      float: left;
+      height: 65px;
+      overflow: hidden;
+      width: 65px;
+    }
+
+    .text {
+      padding: 0 0 0 86px;
+      min-height: 80px;
+      position: relative;
+
+      .name {
+        display: block;
+        color: $color_dark_medium;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: -4px;
+      }
+
+      .comment-reply-link {
+        color: $color_blue;
+        font-size: 9px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 0 0 5px;
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .text_holder {
+        display: block;
+        margin: 3px 0 0 0;
+      }
+    }
+
+    .comment_date {
+      color: $color_medium_grayish;
+      font-size: 12px;
+    }
+
+    .comment {
+      margin-left: 90px;
+    }
+  }
+}
